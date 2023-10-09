@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.kenwan_luckydrawwheel.LuckDrawWheelView
+            android:id="@+id/luckWheel"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/spinButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/luckWheel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Spin" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_above="@id/luckWheel"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinButton"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="12dp"
+            android:text="Result" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
